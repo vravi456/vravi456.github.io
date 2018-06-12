@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Supercapacitor of the Future</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="capacitor.png" type="image/png" />
+</head>
+<style>
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+}
+
+hr {
+    width: 95%;
+    float: inherit;
+    border-color: #707070;
+}
+
+.classNavbar {
+  overflow: visible;
+  background-color: white;
+  position: fixed;; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 60px;
+  opacity: 0.995;
+  z-index: 5000;
+}
+
+.classNavbar a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: helvetica neue, 'sans-serif';
+  font-weight: 300;
+  letter-spacing: 1px;
+  -o-transition:color .1s ease-out, 0.1s ease-in;
+  -ms-transition:color .1s ease-out, 0.1s ease-in;
+  -moz-transition:color .1s ease-out, 0.1s ease-in;
+  -webkit-transition:color .1s ease-out, 0.1s ease-in;
+}
+
+.classNavbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+.classNavbar li {
+  display: inline;
+}
+
+
+.classNavbar ul li {
+  float: left;
+  width: 360px;
+  background-color: white;
+  line-height: 60px;
+}
+
+.classNavbar ul li:nth-child(2){
+  text-indent: 4%;
+}
+
+.classNavbar ul li:nth-child(4){
+  text-indent: 4%;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+.classNavbar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.classNavbar ul li a:hover {
+  background-color: none;
+  color: black;
+}
+
+.classNavbar ul li:last-child {
+  padding-left: 10%;
+}
+
+.classNavbar ul li ul li {
+  display: none;
+  height: 60px;
+}
+
+.classNavbar ul li ul li a:hover {
+  color: white;
+  font-weight: 349;
+  font-size: 20px;
+}
+
+.classNavbar ul li ul li:hover {
+  color: white;
+  background-color: #2E2E2E;
+  -webkit-transition: 2000ms ease-in;
+    -moz-transition: 2000ms ease-in;
+    -o-transition: 2000ms ease-in;
+    transition: 2000ms ease-in, font-size
+}
+
+.classNavbar ul li:hover ul li {
+  display: block;
+  height: 60px;
+  color: black;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+}
+
+.w3-display-container1 {
+  height: 90%;
+  width: 90%;
+  background: rgba(160, 160, 160, 0.0);
+  margin: 0 auto;
+  top: 6%;
+  position: relative;
+  text-decoration: none;
+}
+
+.dankmeme {
+    /* The image used */
+    background-image:  linear-gradient(rgba(162,209,255,0.1), rgba(0,0,0,0.8)), url("https://eoimages.gsfc.nasa.gov/images/imagerecords/55000/55167/earth_lights_lrg.jpg");
+    /* Set a specific height */
+    height: 1600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-size: 1px;
+}
+
+h2 a:link {
+  color: white;
+  text-decoration: none;
+}
+
+h2 a:visited {
+  color: white;
+}
+
+h2 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h2 a:active {
+  color: white;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  left: 6.5%;
+  position: relative;
+}
+
+p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+table {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  height: 20%;
+  border: 1px solid white;
+  position: relative;
+  left: 6.5%;
+}
+
+table td {
+  border: 1px solid white;
+  font-size: 18px;
+  padding-top: .8px;
+  padding-bottom: .8%;
+  padding-left: .8%;
+  text-align: left;
+  line-height: 150%;
+  padding-right: 10px;
+}
+
+table th {
+  border: 1px solid white;
+  font-size: 20px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.column1 {
+  width: 49%;
+}
+
+.intro-width {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  text-align: center;
+  font-size: 19px;
+}
+
+.img2 {
+  position: relative;
+  left: 10%;
+  width: 35%;
+  height: 24%;
+  border: 5px solid white;
+
+}
+
+.img3 {
+  position: relative;
+  right: 8%;
+  width: 37%;
+  height: 24%;
+  float: right;
+  border: 5px solid white;
+}
+
+.left {
+    float: left;
+}
+
+.firstparapgraph-indent {
+  position: relative;
+  left: 5%;
+  padding-top: 32%;
+  padding-right: 10%;
+  text-align: justify;
+  line-height: 150%;
+  font-size: 20px;
+}
+
+.spacing-table-to-img {
+  height: 4%;
+}
+
+.spacing-intro-to-h3 {
+  padding-top: 2%;
+}
+
+.spacing-title-to-intro {
+  padding-bottom: 2%;
+}
+
+</style>
+
+<body>
+  <div class ="dankmeme">
+    <nav class = "classNavbar">
+      <ul>
+        <li><a href="Toshiba Homepage (desktop).html">Home</a></li>
+        <li><a>Current Energy Storage Solutions</a>
+          <ul>
+            <li><a href="Lithium-Ion-Batteries.html">Lithium-Ion Batteries</li>
+          </ul>
+        </li>
+        <li>Necessary Developments
+          <ul>
+            <li><a href="Three Step Process.html">The Three Components</li>
+          </ul>
+        </li>
+        <li>Our Proposal
+          <ul>
+            <li><a href="Supercapacitor of the Future.html">Supercapacitor of the Future</li>
+            <li><a href="Bibliography.html">Bibliography</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+<div class ="w3-display-container1">
+<h1><a>s</a></h1>
+<h2 class="spacing-title-to-intro"><a href="Supercapacitor of the Future.html">Supercapacitor of the Future</a></h2>
+<!--1. add images of supercap
+-->
+  <h3 class="spacing-intro-to-h3"> Advantages of Proposed Supercapacitor </h3>
+<table>
+  <tr>
+    <th> Performance </th>
+    <th> Safety </th>
+  </tr>
+  <tr>
+    <td class="column1"> - Greater charge and discharge rate (greater power density) </td>
+    <td> - Wider temperature operation range (-40° C to 120° C)  </td>
+  </tr>
+  <tr>
+    <td class="column1"> - Increased capacitance (greater energy density) due to the high surface area of the trilayer, close proximity of electrodes, and high ionically conductive separators and electrolytes </td>
+    <td> - No dendrite branches because no Lithium and electrochemical reactions to build up gunk in the cell </td>
+  </tr>
+  <tr>
+    <td class="column1"> - More charge/discharge cycles due to no component degradation from electrochemical reactions </td>
+    <td> - High thermal resistance in materials used (more resistant to internal heat and thermal conductivity) </td>
+</table>
+<div class="spacing-table-to-img"></div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Electric_double-layer_capacitor_%28Activated_carbon_electrode_-_Tube_type%29.PNG" alt="supercapacitor cross-section" class="img2 left"></img><img src="supercap-layers.png" alt="different layers in supercapacitor labeled" class="img3"></img>
+<p class="firstparapgraph-indent">
+  This proposed supercapacitor combines several new technologies such as trilayer electrodes, heterogeneous current collectors, the ABA stacking method,
+  resin-bonded cellulose separators, and ionic liquid based gel polymer electrolyte. These technologies are utilized in order to combat the current limitations of
+  lithium ion batteries and capacitors. Several components contribute to an increase in capacitance (electrodes, stacking method) and conductivity (separators, electrolyte)
+  , whereas other components minimize thermal runaway (current collector). This supercapacitor has the capability to replace lithium-ion batteries entirely if
+  the components become mass producible; examples of applications include: regerative braking, powering generators for the power grid, pacemakers, defense systems,
+  portable technology, storing solar power, powering AI, etc. Overall, we believe the world can benefit in several ways from the use of this supercapacitor because of it's
+  performance and safety improvements over previous generation technologies.
+
+
+</p>
+
+</div>
+      </div>
+</body>
+</html>

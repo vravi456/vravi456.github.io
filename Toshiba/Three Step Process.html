@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Three Components</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="capacitor.png" type="image/png" />
+</head>
+<style>
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  background-color: white;
+  top: 0;
+  position: relative;
+}
+
+hr {
+    width: 90%;
+    float: inherit;
+    border-color: gray;
+    height: 0px;
+}
+
+.classNavbar {
+  overflow: visible;
+  background-color: white;
+  position: fixed;; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 60px;
+  opacity: 0.995;
+  z-index: 5000;
+}
+
+.classNavbar a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: helvetica neue, 'sans-serif';
+  font-weight: 300;
+  letter-spacing: 1px;
+  -o-transition:color .1s ease-out, 0.1s ease-in;
+  -ms-transition:color .1s ease-out, 0.1s ease-in;
+  -moz-transition:color .1s ease-out, 0.1s ease-in;
+  -webkit-transition:color .1s ease-out, 0.1s ease-in;
+}
+
+.classNavbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+.classNavbar li {
+  display: inline;
+}
+
+
+.classNavbar ul li {
+  float: left;
+  width: 360px;
+  background-color: white;
+  line-height: 60px;
+}
+
+.classNavbar ul li:nth-child(2){
+  text-indent: 4%;
+}
+
+.classNavbar ul li:nth-child(4){
+  text-indent: 4%;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+.classNavbar ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.classNavbar ul li a:hover {
+  background-color: none;
+  color: black;
+}
+
+.classNavbar ul li:last-child {
+  padding-left: 10%;
+}
+
+.classNavbar ul li ul li {
+  display: none;
+  height: 60px;
+}
+
+.classNavbar ul li ul li a:hover {
+  color: white;
+  font-weight: 349;
+  font-size: 20px;
+}
+
+.classNavbar ul li ul li:hover {
+  color: white;
+  background-color: #4B4B4B;
+  -webkit-transition: 2000ms ease-in;
+    -moz-transition: 2000ms ease-in;
+    -o-transition: 2000ms ease-in;
+    transition: 2000ms ease-in, font-size;
+}
+
+.classNavbar ul li:hover ul li {
+  display: block;
+  height: 60px;
+  color: black;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+}
+
+.w3-display-container1 {
+  height: 90%;
+  width: 90%;
+  background: rgba(160, 160, 160, 0.1);
+  margin: 0 auto;
+  top: 5%;
+  position: relative;
+  text-decoration: none;
+}
+
+.dankmeme {
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,1)), url("https://www.walldevil.com/wallpapers/w09/lowpoly-yurishopa-3d-polygons.jpg");
+    /* Set a specific height */
+    height: 2500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-size: 0px;
+}
+
+h2 a:link {
+  color: white;
+  text-decoration: none;
+}
+
+h2 a:visited {
+  color: white;
+}
+
+h2 a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h2 a:active {
+  color: white;
+}
+
+h2 {
+  font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+
+}
+
+h4 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-indent: 5%;
+  position: relative;
+  top: 0px;
+}
+
+h5 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  position: relative;
+  top: 1%;
+  text-align: right;
+  right: 5%;
+}
+
+p {
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 18px;
+  color: white;
+  float: left;
+  margin-right: 4%;
+  margin-left: 4%;
+  line-height: 225%;
+  bottom: 1%;
+  position: relative;
+  text-align: left;
+  letter-spacing: normal;
+}
+
+.img1 {
+  width: 42%;
+  height: 3%;
+  border: 3px solid gray;
+}
+
+.img2 {
+  width: 42%;
+  height: 30%;
+  border: 3px solid gray;
+}
+
+.img3 {
+  width: 42%;
+  height: 300px;
+  border: 3px solid gray;
+}
+
+.left {
+  position: relative;
+  float: left;
+  margin: 1% 4% 2% 0px;
+}
+
+.right {
+  position: relative;
+  float: right;
+  margin: 0px 0px 4% 4%;
+}
+
+.intro-width {
+  width: 92%;
+  position: relative;
+  text-align: center;
+  left: 4%;
+  line-height: 250%;
+}
+
+
+
+</style>
+
+<body>
+  <div class ="dankmeme">
+    <nav class = "classNavbar">
+      <ul>
+        <li><a href="Toshiba Homepage (desktop).html">Home</a></li>
+        <li><a>Current Energy Storage Solutions</a>
+          <ul>
+            <li><a href="Lithium-Ion-Batteries.html">Lithium-Ion Batteries</li>
+          </ul>
+        </li>
+        <li>Necessary Developments
+          <ul>
+            <li><a href="Three Step Process.html">The Three Components</li>
+          </ul>
+        </li>
+        <li>Our Proposal
+          <ul>
+            <li><a href="Supercapacitor of the Future.html">Supercapacitor of the Future</li>
+            <li><a href="Bibliography.html">Bibliography</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+<div class ="w3-display-container1">
+  <h1><a>s</a></h1>
+  <br>
+  <h2><a href="Three Step Process.html">The Three Components</a></h2>
+  <br>
+  <h3 class="intro-width"> We chose the trilayer, the current collector, and the stacking method as our main areas improvement because those three have the largest impact on the overall capacitance, thermal properties, and ionic conductivity of the cell.</h3>
+  <br>
+  <h4> The Trilayer </h4>
+  <p style="padding-bottom: 40px;">
+    <img src="https://qph.ec.quoracdn.net/main-qimg-195a5d4651d939209cc84685dcd6b2e1-c" alt="Example of Trilayer" class="left img1">
+       The most significant component of the newly proposed supercapacitor is the trilayer, and it consists of: graphene, silicene, germanene.
+       Those three single atom thick allotropes of the elements carbon, silicon, and germanium, respectively, are very similar in chemical composition and other properties.
+       Graphene, although a great electrical and thermal conductor and very pliable, doesn't have the properties of a semiconductor.
+       It is classified as a zero-gap semiconductor because its conduction and valence bands meet at the Dirac point.
+       The advantage of the semiconductor is the ability to regulate the flow of electrons.
+     </img>
+  </p>
+  <hr>
+  <h5 style="padding-top: 40px; padding-bottom: 40px;"> The Current Collector </h5>
+  <p>
+    <img src="current-collector.png" alt="Supercapacitor Current Collector" class="right img2">
+    <br>
+    When designing a supercapacitor cell it's important to have an efficient current collector,
+    because its function is to collect generated electricity and disperse it to other parts of the system.
+    Current designs are not bad, but decreasing thermal-runaway will keep the overall temperature of the cell within the operating range of the supercapacitor, -40°C to 85°C.
+    The solution was to use heterogeneous current collectors, which are designed for heat dissipation and to not overheat due to mechanical stress.
+     </img>
+  </p>
+  <hr>
+  <h4 style="padding-top: 40px; padding-bottom: 40px;"> The Stacking Method </h4>
+  <p style="padding-bottom: 20px;">
+    <img src="https://qph.ec.quoracdn.net/main-qimg-6676f41fd60e30ef7af61668ef3f37bf" alt="Supercapacitor Stacking Methods Diagram" class="left img3">
+     As the name implies, the stacking method is the order in which the single layer allotropes are stacked on top of each other.
+     We considered two common solutions: ABA, or Bernal, stacking and ABC, or rhombohedral, stacking.
+     One study demonstrated that the ABA method acted like a conductor, whereas the ABC method acted like an insulator.
+     We went with ABA stacking because two of the three single layer allotropes we propose have semiconductor properties,
+     and are capable of regulating current flow on their own, therefore negating the high resistance in the electrodes.
+     </img>
+  </p>
+  <hr>
+
+</div>
+      </div>
+</body>
+</html>
